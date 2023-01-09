@@ -8,4 +8,9 @@ router.get("/", async (req, res) => {
   res.send(pokemons);
 });
 
+router.get("/:type", async (req, res) => {
+  const pokemons = await Pokemon.find({ typeA: req.params.type });
+  res.send(pokemons);
+});
+
 export default router;
