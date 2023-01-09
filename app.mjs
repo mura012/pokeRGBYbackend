@@ -9,7 +9,9 @@ const port = process.env.PORT || 8080;
 
 app.use(
   cors({
-    origin: process.env.LOCAL_URI || "https://pokergbytools.vercel.app/",
+    origin:
+      process.env.LOCAL_URI ||
+      "https://pokergbytools-a1x1qov5i-mura012.vercel.app",
   })
 );
 
