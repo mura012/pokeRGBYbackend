@@ -9,7 +9,7 @@ const port = process.env.PORT || 8080;
 
 app.use(
   cors({
-    origin: "https://www.pokergbytools.com",
+    origin: process.env.LOCALHOST || "https://www.pokergbytools.com",
   })
 );
 
