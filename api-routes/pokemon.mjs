@@ -4,7 +4,7 @@ import Pokemon from "../models/pokemon.mjs";
 const router = express.Router();
 
 router.get("/", async (req, res) => {
-  const pokemons = await Pokemon.find();
+  const pokemons = await Pokemon.find().sort({ number: 1 });
   res.send(pokemons);
 });
 
